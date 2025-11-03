@@ -208,36 +208,22 @@ function hitungCertaintyFactor(userCF) {
 // Generate rekomendasi berdasarkan jenis penyakit
 function generateRekomendasi(kodePenyakit) {
     const rekomendasi = {
-        "P1": `Rekomendasi untuk Batuk Berdahak:
-• Minum air hangat yang cukup
-• Gunakan obat batuk ekspektoran
-• Hindari makanan berminyak dan dingin
-• Istirahat yang cukup
-• Jika berlanjut >3 hari, konsultasi dokter`,
+        "P1": 'Berdasarkan hasil diagnosa, Anda kemungkinan mengalami Batuk berdahak.',
 
-        "P2": `Rekomendasi untuk Batuk Kering:
-• Minum air putih hangat
-• Gunakan obat batuk antitusif
-• Hindari debu dan polusi
-• Gunakan masker saat beraktivitas di luar
-• Hindari makanan pedas`,
+        "P2": `Berdasarkan hasil diagnosa, Anda kemungkinan mengalami Batuk kering.`,
 
-        "P3": `Rekomendasi untuk Batuk Alergi:
-• Identifikasi dan hindari alergen
-• Gunakan antihistamin jika diperlukan
-• Jaga kebersihan lingkungan
-• Gunakan masker saat keluar rumah
-• Konsultasi dokter untuk tes alergi`,
+        "P3": `Berdasarkan hasil diagnosa, Anda kemungkinan mengalami Batuk alergi.`,
 
         "GAGAL": `Tidak dapat didiagnosa dengan pasti:
-• Gejala yang dimasukkan bertentangan
-• Silakan konsultasi langsung dengan dokter
-• Periksa gejala yang dialami lebih detail`,
+                • Gejala yang dimasukkan bertentangan
+                • Silakan konsultasi langsung dengan dokter
+                • Periksa gejala yang dialami lebih detail`,
 
-        "UNKNOWN": `Tidak dapat menentukan diagnosa:
-• Gejala tidak spesifik
-• Disarankan konsultasi dengan dokter
-• Perhatikan perkembangan gejala`
+
+       "UNKNOWN": `Tidak dapat menentukan diagnosa:
+                • Gejala tidak spesifik
+                • Disarankan konsultasi dengan dokter
+                • Perhatikan perkembangan gejala`
     };
     
     return rekomendasi[kodePenyakit] || rekomendasi["UNKNOWN"];

@@ -458,10 +458,15 @@
 
                 "P3": `Berdasarkan hasil diagnosa, Anda kemungkinan mengalami Batuk alergi.`,
 
+                "GAGAL": `Tidak dapat didiagnosa dengan pasti:
+                        • Gejala yang dimasukkan bertentangan
+                        • Silakan konsultasi langsung dengan dokter
+                        • Periksa gejala yang dialami lebih detail`,
+
                 "UNKNOWN": `Tidak dapat menentukan diagnosa:
-• Gejala tidak spesifik
-• Disarankan konsultasi dengan dokter
-• Perhatikan perkembangan gejala`
+                        • Gejala tidak spesifik
+                        • Disarankan konsultasi dengan dokter
+                        • Perhatikan perkembangan gejala`
             };
             
             return rekomendasi[kodePenyakit] || rekomendasi["UNKNOWN"];
