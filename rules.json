@@ -1,0 +1,37 @@
+{
+  "data_diagnosa_batuk": {
+    "gejala": [
+      {"kode": "G1", "nama": "Banyak lender ditenggorokan"},
+      {"kode": "G2", "nama": "Tenggorokan gatal"},
+      {"kode": "G3", "nama": "Tenggorokan sakit"},
+      {"kode": "G4", "nama": "Bersin"},
+      {"kode": "G5", "nama": "Sulit bernafas"},
+      {"kode": "G6", "nama": "Hidung tersumbat"},
+      {"kode": "G7", "nama": "Demam ringan"},
+      {"kode": "G8", "nama": "Mata berair"},
+      {"kode": "G9", "nama": "Batuk"},
+      {"kode": "G10", "nama": "Sakit kepala"},
+      {"kode": "G11", "nama": "Badan lemas"}
+    ],
+    "penyakit": [
+      {"kode": "P1", "nama": "Batuk berdahak"},
+      {"kode": "P2", "nama": "Batuk Kering"},
+      {"kode": "P3", "nama": "Batuk Alergi"},
+      {"kode": "GAGAL", "nama": "Tidak dapat didiagnosa"},
+      {"kode": "UNKNOWN", "nama": "Tidak diketahui"}
+    ],
+    "aturan": [
+      {"rule_id": "R1", "kode_penyakit": "P1", "cf_pakar": 0.8, "gejala": ["G1", "G4", "G6", "G8", "G9", "G10", "G11"]},
+      {"rule_id": "R2", "kode_penyakit": "P2", "cf_pakar": 0.7, "gejala": ["G1", "G2", "G3", "G5", "G7", "G11"]},
+      {"rule_id": "R3", "kode_penyakit": "P3", "cf_pakar": 0.6, "gejala": ["G1", "G2", "G5", "G8", "G9"]},
+      {"rule_id": "R4", "kode_penyakit": "GAGAL", "cf_pakar": 0.9, "gejala": ["G4", "G2"]},
+      {"rule_id": "R5", "kode_penyakit": "GAGAL", "cf_pakar": 0.9, "gejala": ["G3", "G1"]},
+      {"rule_id": "R6", "kode_penyakit": "P3", "cf_pakar": 0.5, "gejala": ["G1", "G2", "G5", "G9"]},
+      {"rule_id": "R7", "kode_penyakit": "P1", "cf_pakar": 0.6, "gejala": ["G1", "G4", "G6", "G9", "G11"]},
+      {"rule_id": "R8", "kode_penyakit": "P2", "cf_pakar": 0.5, "gejala": ["G1", "G2", "G5", "G10", "G11"]},
+      {"rule_id": "R9", "kode_penyakit": "KOMPLIKASI_P1", "cf_pakar": 0.6, "gejala": ["P1"]},
+      {"rule_id": "R10", "kode_penyakit": "KOMPLIKASI_P2", "cf_pakar": 0.5, "gejala": ["P2"]},
+      {"rule_id": "R11", "kode_penyakit": "KOMPLIKASI_P3", "cf_pakar": 0.4, "gejala": ["P3"]}
+    ]
+  }
+}
